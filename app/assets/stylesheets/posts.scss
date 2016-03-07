@@ -4,3 +4,49 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+#mainLogo {
+	float: left;
+	font-size: 1.7em;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+
+}
+
+.starter-template {
+	padding-top: 50px;
+}
+
+.jumbotron {
+	margin-top: 30px;
+}
+
+h1 {
+	text-align: center;	
+}
+
+h2 {
+	margin-top: 70px;
+	text-align: center;
+}
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.submitbutton {
+	    margin-top: 10px;
+
+}

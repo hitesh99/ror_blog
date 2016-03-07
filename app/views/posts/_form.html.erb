@@ -4,12 +4,22 @@
  //@post to save in model 
 
 %>
+
+
+<div class="jumbotron">
+	<div class="container">
+
 <%= form_for @post do|f| %>
- 	<%= f.label :title %> <br>
- 	<%= f.text_field :title %> <br>
- 	<br>
- 	<%= f.label :body %> <br>
- 	<%= f.text_area  :body %> <br>
- 	<br>
- 	<%= f.submit %>	
+<div class="input-group input-group-lg">
+ 	<%= f.text_field :title, :placeholder => "Enter Title", class: "form_control", class: "form-signin", class: "form-control" %>
+</div>
+
+
+ <div class="input-group input-group-lg">
+ 	<%= f.text_field  :body, :placeholder => "Enter Body", class: "form_control", class: "form-signin", class: "form-control" %>
+ </div>
+
+ 	<%= f.submit class: "btn btn-lg btn-primary btn-block submitbutton" %>	
 <% end %> 
+</div>
+</div>
