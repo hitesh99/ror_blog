@@ -1,9 +1,5 @@
-
-    <div class="container">
-
-      <div class="starter-template">
-        <h1>Welcome to Bhai Ka Blog</h1>
-        <p class="lead">It's been exactly 708 days since I've moved to New York from Singapore, and it's been an amazing 708 days. What brought me here? What keeps me here? What am I passionate about? These are questions that should be running through your head if I've caught your attention.</p>
-      </div>
-
-    </div><!-- /.container -->
+<% @posts.each do |post| %>
+<h2><%= post.title %></h2>
+<p><%= post.body%></p> <br>
+<%= link_to "Show Posts", post  %>
+<% end %>
